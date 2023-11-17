@@ -8,3 +8,6 @@ https://www.kaggle.com/datasets/rhammell/full-vs-flat-tire-images
 
 automobile parts classification:
 https://www.kaggle.com/datasets/mdwaquarazam/automobilepartsindentification
+
+Automotive Vehicles Engine Health Dataset
+https://www.kaggle.com/datasets/parvmodi/automotive-vehicles-engine-health-dataset
