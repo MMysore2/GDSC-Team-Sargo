@@ -28,3 +28,6 @@ https://www.kaggle.com/datasets/camnugent/california-housing-prices
 
 USA real estate dataset 
 https://www.kaggle.com/datasets/arslanali4343/real-estate-dataset
+
+House prices 
+https://www.kaggle.com/code/rickyrick/house-prices-analysis-and-cleaning
