@@ -14,3 +14,11 @@ https://www.kaggle.com/datasets/parvmodi/automotive-vehicles-engine-health-datas
 
 Car Parts and Car Damages Dataset:
 https://humansintheloop.org/resources/datasets/car-parts-and-car-damages-dataset/
+
+OBD2 Touble codes
+/*DTCs can be retrieved from a module's memory using a scan tool or code reader. 
+The following dataset includes codes related to the powertrain.*/
+https://www.kaggle.com/datasets/donnetew/odb2-powertrain-codes
+
+USA Real Estate Dataset
+https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset
