@@ -22,3 +22,6 @@ https://www.kaggle.com/datasets/donnetew/odb2-powertrain-codes
 
 USA Real Estate Dataset
 https://www.kaggle.com/datasets/ahmedshahriarsakib/usa-real-estate-dataset
+
+California Housing Pricing
+https://www.kaggle.com/datasets/camnugent/california-housing-prices
