@@ -11,3 +11,6 @@ https://www.kaggle.com/datasets/mdwaquarazam/automobilepartsindentification
 
 Automotive Vehicles Engine Health Dataset
 https://www.kaggle.com/datasets/parvmodi/automotive-vehicles-engine-health-dataset
+
+Car Parts and Car Damages Dataset:
+https://humansintheloop.org/resources/datasets/car-parts-and-car-damages-dataset/
