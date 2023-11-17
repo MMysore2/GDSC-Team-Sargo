@@ -31,3 +31,7 @@ https://www.kaggle.com/datasets/arslanali4343/real-estate-dataset
 
 House prices 
 https://www.kaggle.com/code/rickyrick/house-prices-analysis-and-cleaning
+
+Couple of housing prices 
+https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index-Datasets.aspx
+
