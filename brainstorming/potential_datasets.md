@@ -39,8 +39,11 @@ https://www.fhfa.gov/DataTools/Downloads/Pages/House-Price-Index-Datasets.aspx
 Personal Trainer Datasets
 
 https://www.kaggle.com/code/emdemor/predicting-burned-calories-on-workout/notebook
+
 https://www.kaggle.com/datasets/kukuroo3/powerlifting-benchpress-weight-predict
+
 https://www.kaggle.com/code/niharika41298/ultimate-gym-exploratory-data-analysis
+
 https://openpowerlifting.gitlab.io/opl-csv/introduction.html  This one has a whole bunch
 
 
