@@ -46,6 +46,8 @@ https://www.kaggle.com/code/niharika41298/ultimate-gym-exploratory-data-analysis
 
 https://openpowerlifting.gitlab.io/opl-csv/introduction.html  This one has a whole bunch
 
+https://github.com/vc1492a/Hey-Waldo/blob/master/original-images/15.jpg
+
 
 
 
