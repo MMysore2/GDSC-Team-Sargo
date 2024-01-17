@@ -1,0 +1,25 @@
+<annotation>
+	<folder>waldo-256-annotations</folder>
+	<filename>12_0_3.jpg</filename>
+	<path>/waldo-256-annotations/12_0_3.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>256</width>
+		<height>256</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Waldo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>214</xmin>
+			<ymin>1</ymin>
+			<xmax>233</xmax>
+			<ymax>41</ymax>
+		</bndbox>
+	</object>
+</annotation>
