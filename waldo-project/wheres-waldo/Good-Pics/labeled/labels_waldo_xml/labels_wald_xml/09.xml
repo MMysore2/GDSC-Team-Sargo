@@ -1,0 +1,25 @@
+<annotation>
+	<folder>waldo</folder>
+	<filename>09.JPG</filename>
+	<path>/waldo/09.JPG</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>261</width>
+		<height>246</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Waldo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>120</xmin>
+			<ymin>112</ymin>
+			<xmax>171</xmax>
+			<ymax>188</ymax>
+		</bndbox>
+	</object>
+</annotation>

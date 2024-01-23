@@ -1,0 +1,12 @@
+label_name,bbox_x,bbox_y,bbox_width,bbox_height,image_name,image_width,image_height
+Waldo,228,31,28,52,01.jpg,256,256
+Waldo,129,173,66,83,02.jpg,256,256
+Waldo,60,24,38,40,03.jpg,256,256
+Waldo,117,170,52,69,04.jpg,256,256
+Waldo,1,164,25,59,05.jpg,256,256
+Waldo,197,79,35,83,06.jpg,256,256
+Waldo,151,105,46,103,07.jpg,256,256
+Waldo,94,9,68,174,08.JPG,368,384
+Waldo,120,112,51,77,09.JPG,261,246
+Waldo,213,186,37,68,10.JPG,255,254
+Waldo,201,34,164,216,11.JPG,366,326
