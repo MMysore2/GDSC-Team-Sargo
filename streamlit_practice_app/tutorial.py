@@ -50,12 +50,33 @@ st.image("image.jpg", caption="This is an image! woahhhh", width=500, use_column
 st.audio("movie.mp3", format="audio/mp3")
 st.video("Bruh.mp4", format="video/mp4")
 
-def click(): 
-    print("User has clicked the checkbox")
+#Logs changes in the checkbox to the console if needed 
+def change(): 
+    print("Changed:" + str(st.session_state.checker))
 
-state = st.checkbox("Checkbox in streamlit", on_change = click)
+state = st.checkbox("Checkbox", on_change=change, key ="checker")
 if state:
     st.write("Checkbox is checked")
-    st.audio("ping.mp3", format="audio/mp3", start_time=0,)
-else: 
-    st.write("Please check me! I am a checkbox")
+else:
+    st.write("Checkbox is unchecked")
+
+
+radio_button = st.radio("How are you feeling about finding Waldo?", ("Good", "Bad", "Ugly", "Why am I alive?"))
+print(radio_button)
+
+def button_click():
+    print("Button was clicked")
+
+button = st.button("Click me!", on_click=button_click)   
+
+st.video("Cropped_9+10.mp4", start_time=0)
+select = st.selectbox("What is the answer.....", options=[19, 21])
+
+if select == 19:
+    st.write("You're correct!")
+elif select == 21:
+    st.video("Cropped_9+10_2.mp4", format="video/mp4", start_time=5)
+
+options = ["Crying", "Procrastinating", "Eating", "Sleeping", "Not Studying", "Using ChatGPT"]
+multiselect = st.multiselect("What are some skills you have?", options=options)
+st.write(multiselect)
