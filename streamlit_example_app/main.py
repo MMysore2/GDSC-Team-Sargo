@@ -1,76 +1,86 @@
 # Harjot Gill 
 import streamlit as st
-import base64
 import pandas as pd
 from matplotlib import pyplot as plt
+
+graph_options = None
 
 # Include CSS files
 def include_css(filename):
     with open(filename, 'r') as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# Include page styling and header removal  CSS files
-include_css('.style/page_style.css')
-include_css('.style/header_remove.css')
+#Display graphs onto the screen in place of all the elements
+def display_graph(option, dataframe):
+    if option == "Line":
+        plt.title("Favorite Animal Count (Line Graph)")
+        plt.xlabel("Favorite Animal")
+        plt.ylabel("Count")
+        plt.grid(True)        
+        plt.plot(dataframe)
+        st.pyplot()
+    elif option == "Bar":
+        plt.title("Favorite Animal Count (Bar Graph)")
+        plt.xlabel("Favorite Animal")
+        plt.ylabel("Count")
+        plt.bar(dataframe.index, dataframe)
+        st.pyplot()
+    elif option == "Pie":
+        plt.title("Favorite Animal Count (Pie Chart)")
+        plt.pie(dataframe, labels=dataframe.index, autopct='%1.1f%%')
+        st.pyplot()
 
 
-# ******Body of the page*****
-# Title of the page
-title = "EcoCAR Form"
-st.markdown(f"<center><h1 style='color: white;'>{title}</h1></center>", unsafe_allow_html=True)
- 
-#name input
-col1, col2 = st.columns(2)
-col1.text_input("First Name")
-col2.text_input("Last Name") 
+def main():
+    if 'data' not in st.session_state:
+        st.session_state.data = []
 
-#animal selection
-select = st.selectbox("Pick your favorite animal", options=["Select an animal", "dog", "cat", "bird", "fish", "rabbit"])
-submit_button = st.button("Submit")
+    # Include page styling and header removal  CSS files
+    include_css('.style/header_remove.css')
 
-# dataframe logic 
-"""   TODO:
-    1. Create a dataframe with the following columns: 
-        - Name
-        - Animal
-    2. Append the data to the dataframe 
-    3. Display the dataframe on the page
-"""
+    # ******Sidebar of the page*****
+    with st.sidebar:
+        st.markdown("<center><h1> Graphs </h1></center>", unsafe_allow_html=True)
+        graph_options = st.selectbox("", options=["Select the type of graph", "Line", "Bar", "Pie"])
+    
+    # If the graph option is selected and the data is not empty, display the graph
+    if graph_options != "Select the type of graph" and graph_options != None and st.session_state.data != []:
+        dataframe = pd.DataFrame(st.session_state.data)
+        fav_count_dataframe = dataframe['Favorite Animal'].value_counts()
+        display_graph(graph_options, fav_count_dataframe)
 
+    else:
+        # ******Main body of the page*****
 
-# ******Sidebar of the page*****
-with st.sidebar:
-    st.markdown("<center><h1> Graphs </h1></center>", unsafe_allow_html=True)
-    st.selectbox("", options=["Select the type of graph", "Line", "Bar", "Pie"])
+        #Display the background image
+        include_css('.style/page_style.css')
+    
+        # Title of the page
+        title = "Nice Form"
+        st.markdown(f"<center><h1 style='color: white;'>{title}</h1></center>", unsafe_allow_html=True)
 
+        #User Input with button 
+        with st.form(key='my_form'):
+            col1, col2 = st.columns(2)
+            first_name = col1.text_input("First Name")
+            last_name = col2.text_input("Last Name") 
+            fav_animal = st.selectbox("Pick your favorite animal", options=["Select an animal", "dog", "cat", "bird", "fish", "rabbit"])
+            submit_button = st.form_submit_button(label='Submit')
 
+        #Validation of the input
+        if submit_button:
+            if fav_animal == "Select an animal" or first_name == "" or last_name == "":   #<-- If parameters not are filled 
+                st.write("Invalid input")
+            else:
+                st.session_state.data.append({'First Name': first_name, 'Last Name': last_name, 'Favorite Animal': fav_animal})
 
+        #Updating the dataframe
+        dataframe = pd.DataFrame(st.session_state.data)
 
+        if not dataframe.empty:
+            st.write(dataframe)
 
+    
 
-
-
-
-
-
-
-
-
-#Make sure any arrays/tables/dataframes aren't reseting everytime streamlit reruns
-
-#Remove the header of the streamlit page 
-
-#Keep any text centered
-
-#Make sure the info is collected using a form
-
-#Make the animal list anything you like as long as its list of things to track
-
-#You can use any preferred libraries to produce the graphs
-
-#You are welcome to make it better in any way as long as the main steps are kept the same (CHECK THE RUBRIC IN THE DOC)
-
-#Use the image "photo.jpg" for the background
-
-#Save the code as "main.py" put it on a folder name "[Your Name] Streamlit Test"
-#Transfer it into a zip file then email the zip folder to airtija@ucdavis.edu and CC upmorgan@ucdavis.edu
+if __name__ == "__main__":
+    main()
