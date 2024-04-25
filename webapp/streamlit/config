@@ -1,0 +1,9 @@
+[theme]
+base='dark'
+
+[deprecation]
+showPyplotGlobalUse = false
+
+[server]
+enableCORS=false
+enableXsrfProtection=false
