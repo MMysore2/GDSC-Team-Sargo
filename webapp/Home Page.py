@@ -16,19 +16,19 @@ def main():
         layout="wide",
         initial_sidebar_state="expanded")
 
-     # Include header removal CSS files
+    #  Include header removal CSS files
     include_css('static/css/styles.css') 
 
     #Side bar containing webpages 
-    sidebar()
+#     sidebar()
 
 
 
-def sidebar():
-    # ******Sidebar of the page*****
-    with st.sidebar:
-        # st.markdown("<center><h1></h1></center>", unsafe_allow_html=True)
-        st.write("Hi")
+# def sidebar():
+#     # ******Sidebar of the page*****
+#     with st.sidebar:
+#         # st.markdown("<center><h1></h1></center>", unsafe_allow_html=True)
+#         st.write("Hi")
 
 
         
