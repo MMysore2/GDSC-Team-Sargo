@@ -27,8 +27,10 @@ def display_members():
     jacob_pfp = MysoreLeft.image("../webapp/static/img/waldo_icon.png")
 
     jacobRight.markdown("<center><h1> Jacob Marinas </h1></center>", unsafe_allow_html=True)
-    jacobRight.write("\nhi, I’m Jacob - 3rd year CS / Math @ UC Davis : ) a few facts about me:\ncame up here from Socal - I like experiencing and learning new things every day
-previously did FTC / FRC robotics, game dev\nenjoy working on interesting / challenging problems with others - that’s why I’m here in GDSC : )\nalso a PM in CodeLab, working with the UC Davis Center for Educational Effectiveness (also CS Peer Advisor in training :o)\nother interests: cubing, rhythm games, dance, gym, tech, productivity\nfun fact: I’ve solved 9 Rubik’s Cubes in a row, blindfolded")
+    jacobRight.write("\nhi, I’m Jacob - 3rd year CS / Math @ UC Davis : ) a few facts about me:\ncame up here from Socal - I like experiencing and learning new things every day \
+                     previously did FTC / FRC robotics, game dev\nenjoy working on interesting / challenging problems with others - that’s why I’m here in GDSC : )\nalso a PM in CodeLab, \
+                     working with the UC Davis Center for Educational Effectiveness (also CS Peer Advisor in training :o)\nother interests: cubing, rhythm games, dance, gym, tech, productivity\n \
+                     fun fact: I’ve solved 9 Rubik’s Cubes in a row, blindfolded")
 
     mysoreLeft, mysoreRight  = st.columns(2)
 
