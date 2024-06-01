@@ -59,7 +59,7 @@ def display_members():
     nelsenLeft, nelsenRight = st.columns(2)
     nelsen_pfp = nelsenLeft.image("../webapp/static/img/nelsenPic.jpg")
     nelsenRight.markdown("<center><h1> Nelsen Young </h1></center>", unsafe_allow_html=True)
-    nelsenRight.write("\n Example")
+    nelsenRight.write("\n I'm Nelsen Young, a 3rd CSE major. I like rock climbing and weight lifting.")
 
 
 def main (): 
